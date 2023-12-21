@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import {Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 
@@ -126,10 +126,25 @@ const RegistrationForm = ()=>{
                     Looks good!
                 </div>
 
+                <label for="validationServer03" class="form-label">Mobile No</label>
+                <input type="text" class="form-control is-valid" id="validationServer03"  placeholder="Mobile No."pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+                <label for="validationServer04" class="form-label">Address</label>
+                <input type="text" class="form-control is-valid" id="validationServer04"  placeholder="Loacation" required/>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+               
+
+
                 <div class="mt-3 d-grid gap-2 ms-5 me-5">
                     <button class="btn btn-primary">Register</button>
                 </div>
 
+               
             </div>
         </div>
     )
